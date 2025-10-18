@@ -3,16 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>HNG Frontend Task Stage 0</title>
   </head>
   <body>
     <main>
       <article data-testid="test-profile-card">
+        <!-- Article -->
         <section>
           <!-- Name -->
-          <header data-testid="test-user-name" aria-label="user name">
+          <h2
+            data-testid="test-user-name"
+            aria-label="User Name: Miracle Nnaji"
+          >
             Miracle Nnaji
-          </header>
+          </h2>
           <!-- Bio -->
           <p data-testid="test-user-bio">
             Passionate about technology and web development, I love building
@@ -20,9 +25,9 @@
             Always eager to learn and create impactful solutions.
           </p>
           <!-- Time -->
-          <p data-testid="test-user-time">coming soon</p>
+          <p data-testid="test-user-time" class="time">coming soon</p>
           <!-- Social Links -->
-          <ul data-testid="test-user-social-links">
+          <ul data-testid="test-user-social-links" class="social-links">
             <li>
               <a
                 href="https://x.com/Makuochukw45478"
@@ -55,21 +60,21 @@
             </li>
           </ul>
           <!-- Hobbies -->
-          <section>
+          <section class="hobbies">
             <h3>Hobbies</h3>
             <ul data-testid="test-user-hobbies">
               <li>Coding</li>
-              <li>Photography</li>
-              <li>Traveling</li>
+              <li>Gaming</li>
+              <li>Watching Anime</li>
             </ul>
           </section>
           <!-- Dislikes -->
-          <section>
+          <section class="dislikes">
             <h3>Dislikes</h3>
             <ul data-testid="test-user-dislikes">
-              <li>Spam emails</li>
-              <li>Slow websites</li>
-              <li>Loud environments</li>
+              <li>Dishonesty</li>
+              <li>Stealing</li>
+              <li>Unseriousness</li>
             </ul>
           </section>
         </section>
