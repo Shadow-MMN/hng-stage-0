@@ -1,0 +1,89 @@
+/* Base styles (mobile-first) */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: bisque;
+  color: bisque;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(54, 50, 45);
+  border: 0.25rem solid rgb(198, 195, 195);
+  padding: 1rem;
+  margin: 0 0.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.time {
+  color: ivory;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.social-links li a {
+  text-decoration: none;
+  color: lightseagreen;
+  font-weight: lighter;
+}
+
+.hobbies h3,
+.dislikes h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 100%; /* circular on mobile */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Medium screens and above (desktop) */
+@media (min-width: 768px) {
+  article {
+    flex-direction: row; /* two-column layout */
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 0 1rem;
+  }
+
+  img {
+    width: 300px; /* fixed width for desktop */
+    border-radius: 0; /* remove circular shape */
+  }
+
+  section {
+    flex: 1; /* take remaining space */
+  }
+
+  ul {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
