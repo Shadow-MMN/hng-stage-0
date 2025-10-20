@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="contact" data-testid="test-contact-page">
+      <h1>Contact Us</h1>
+      <form id="contactForm" novalidate>
+        <label for="name">Full Name</label>
+        <input id="name" data-testid="test-contact-name" type="text" required />
+
+        <span
+          id="error-name"
+          data-testid="test-contact-error-name"
+          aria-live="polite"
+        ></span>
+
+        <label for="email">Email</label>
+        <input
+          id="email"
+          data-testid="test-contact-email"
+          type="email"
+          required
+        />
+        <span
+          id="error-email"
+          data-testid="test-contact-error-email"
+          aria-live="polite"
+        ></span>
+
+        <label for="subject">Subject</label>
+        <input
+          id="subject"
+          data-testid="test-contact-subject"
+          type="text"
+          required
+        />
+        <span
+          id="error-subject"
+          data-testid="test-contact-error-subject"
+          aria-live="polite"
+        ></span>
+
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          data-testid="test-contact-message"
+          minlength="10"
+          required
+        ></textarea>
+        <span
+          id="error-message"
+          data-testid="test-contact-error-message"
+          aria-live="polite"
+        ></span>
+
+        <button type="submit" data-testid="test-contact-submit">
+          Send Message
+        </button>
+      </form>
+
+      <p id="success" data-testid="test-contact-success" hidden>
+        Message sent successfully!
+      </p>
+    </main>
+  </body>
+  <script src="./contact.js"></script>
+</html>
